@@ -29,4 +29,16 @@ console.log(randomNumber())
     const persona1 = new Person ('Carles');
     persona1.greet()
 
+// NIVELL 2. Exercici 4.
 
+let arreglo = [2,45,8,-5]
+
+const printNumbers = (array) => {
+
+    for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    console.log(element)
+    }
+}
+
+printNumbers(arreglo)
