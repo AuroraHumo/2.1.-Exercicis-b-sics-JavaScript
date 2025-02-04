@@ -42,3 +42,9 @@ const printNumbers = (array) => {
 }
 
 printNumbers(arreglo)
+
+// NIVELL 3. Exercici 5.
+
+setTimeout(() => {
+    console.log('bona tarda')
+}, 3000);
