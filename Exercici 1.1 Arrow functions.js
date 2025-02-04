@@ -13,3 +13,20 @@ const add = (a, b) =>  ( a + b )
 const randomNumber = () => ( Math.floor(Math.random()*101))
 
 console.log(randomNumber())
+
+    // NIVELL 1. Exercici 3
+    
+    class Person {
+        constructor (name) {
+            this.name = name
+        }
+
+        greet = () => {
+            console.log ( `Hola, ${this.name}`)
+        } 
+    }
+
+    const persona1 = new Person ('Carles');
+    persona1.greet()
+
+
