@@ -24,3 +24,29 @@ function calculo (a, b) {
 }
 
 console.log(calculadora(4,4, calculo))
+
+// Nivell 2. Exercici 3
+
+const esperarISaludar = (nom, callback2) => setTimeout(() => callback2(nom), 2000);
+
+function callback2 (nom) {
+    console.log(`Hola ${nom}`) 
+}
+
+esperarISaludar ('Pere', callback2)
+
+// Nivell 2. Exercici 4
+
+let array2 = ['pc', 'raton', 'pantalla']
+
+function processarElements (array2, callback3) {
+    array2.forEach(element => {
+        console.log(callback3(element))
+    });
+}
+
+function callback3 (e) {
+    return `${e} llamado`
+}
+
+processarElements(array2, callback3)
