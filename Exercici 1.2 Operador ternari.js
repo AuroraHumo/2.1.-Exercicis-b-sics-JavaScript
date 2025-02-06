@@ -1,23 +1,21 @@
 // NIVELL 1. Exercici 1.
 
 function potConduir (edat) {
-    edat >= 18 ? console.log('Pots conduïr') : console.log('No pots conduïr')
+    return edat >= 18 ? ('Pots conduïr') : ('No pots conduïr')
 }
 
-potConduir(19)
+potConduir(7)
 
 // NIVELL 1. Exercici 2.
 
 let edat1 = 23
 let edat2 = 56
 let resultat = edat1 > edat2 ? 'edat1 > edat2' : 'edat2 > edat1'
-console.log(resultat)
 
 // NIVELL 2. Exercici 3.
 
 let num1 = 0
 let res = num1 > 0 ? 'positiu' : num1 < 0 ? 'negatiu' : 'zero'
-console.log(res)
 
 function trobarMaxim (a, b, c) {
     return res = a > b 
@@ -26,4 +24,11 @@ function trobarMaxim (a, b, c) {
 }
 
 let max = trobarMaxim(5,-564,84)
-console.log(max)
+
+// NIVELL 3. Exercici 4.
+
+const arr = [3,45,-2, 0]
+
+const parOImpar = array => array.map ( n => n % 2 == 0 ? 'par' : 'impar' )
+
+console.log( parOImpar(arr) );
