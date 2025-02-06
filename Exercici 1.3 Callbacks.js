@@ -50,3 +50,16 @@ function callback3 (e) {
 }
 
 processarElements(array2, callback3)
+
+// Nivell 3. Exercici 5
+
+function processarCadena (cadena, imprimirPantalla) {
+    let result = cadena.toUpperCase()
+    imprimirPantalla(result)
+}
+
+function imprimirPantalla(result) {
+    console.log(result)
+}
+
+processarCadena('wachu', imprimirPantalla)
