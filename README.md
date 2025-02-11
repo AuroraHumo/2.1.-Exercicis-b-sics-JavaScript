@@ -16,10 +16,3 @@ Exercicis de Javascript basic
 ### ▶️ Execució
 Per executar el projecte, pots fer servir la extensió CODE RUNNER al visual studio.
 
-
-### 📌 Contribució
-Si vols contribuir, fes un `fork` del repositori i envia un `pull request` amb les teves millores.
-
-### 📝 Llicència
-Aquest projecte està sota la llicència [Nom de la Llicència] - Veure `LICENSE` per més detalls.
-
