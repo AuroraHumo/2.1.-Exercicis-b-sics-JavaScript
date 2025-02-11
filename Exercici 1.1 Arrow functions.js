@@ -1,28 +1,24 @@
 
 // NIVELL 1
     // Exercici 1.
-    // Convertir a funció fletxa:
-    // function add(a, b) {return a + b;}
 
-const add = (a, b) =>  ( a + b )
+const add = (a, b) =>  a + b 
 
-    // NIVELL 1. Exercici 2.
-    // Funció de fletxa sense paràmetres: 
-    // Crea una funció de fletxa anomenada randomNumber que no necessiti paràmetres i que retorni un número aleatori entre 0 i 100.
+// NIVELL 1. Exercici 2.
 
-const randomNumber = () => ( Math.floor(Math.random()*101))
+const randomNumber = () => ( Math.floor(Math.random()*100))
 
-console.log(randomNumber())
+console.log(`Resultat d'exercici 1.2: ${randomNumber()}`)
 
     // NIVELL 1. Exercici 3
     
     class Person {
         constructor (name) {
-            this.name = name
+            this._name = name
         }
 
         greet = () => {
-            console.log ( `Hola, ${this.name}`)
+            console.log ( `Resultat d'exercici 1.3: Hola, ${this._name}`)
         } 
     }
 
@@ -37,7 +33,7 @@ const printNumbers = (array) => {
 
     for (let index = 0; index < array.length; index++) {
     const element = array[index];
-    console.log(element)
+    console.log(`Resultat d'exercici 2.4: ${element}`)
     }
 }
 
@@ -46,5 +42,5 @@ printNumbers(arreglo)
 // NIVELL 3. Exercici 5.
 
 setTimeout(() => {
-    console.log('bona tarda')
+    console.log("Resultat d'exercici 3.5: bona tarda")
 }, 3000);

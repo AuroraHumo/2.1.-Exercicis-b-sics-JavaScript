@@ -21,7 +21,7 @@ function trobarMaxim (a, b, c) {
     return res = a > b 
         ? (a > c ? 'a' : 'c')
         : (b > c ? 'b' : 'c')
-}
+} // AMB AQUEST SISTEMA TERNARI NO ES POT CHECKEJAR SI TOTS SON IGUALS. NO ES IDONI.
 
 let max = trobarMaxim(5,-564,84)
 
@@ -29,6 +29,6 @@ let max = trobarMaxim(5,-564,84)
 
 const arr = [3,45,-2, 0]
 
-const parOImpar = array => array.map ( n => n % 2 == 0 ? 'par' : 'impar' )
+const parOImpar = array => array.map ( n => n === 0 ? 'és zero' : n % 2 == 0 ? 'par' : 'impar' )
 
 console.log( parOImpar(arr) );

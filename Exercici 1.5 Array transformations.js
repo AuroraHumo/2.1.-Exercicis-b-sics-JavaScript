@@ -1,7 +1,7 @@
 //1.1
 
 const arr = [1, 2, 3, 4]
-const arrCuadrat = (arr.map((x) => x * 2))
+const arrCuadrat = (arr.map((x) => x * x))
 console.log(arrCuadrat)
 
 //1.2

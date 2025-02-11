@@ -10,13 +10,14 @@ saludar.then( missatge => console.log(missatge))
 
 //1.3
 const saludar2 = new Promise((resolve, reject) => {
+
+    let input = 'hoola' // Falsejem el input per al exercici
+
+    if (input !== 'hola') {
+        return reject('Error')
+    }
     setTimeout(() => {
-        let input = 'hoola'
-        if (input === 'hola') {
             resolve('el input és correcte')
-        } else {
-            reject('Error')
-        }
     }, 2000)
 })
 saludar2
@@ -38,12 +39,14 @@ const saludar3 = new Promise((resolve, reject) => {
     setTimeout(() => {
         if (weather != 'lluvia') {
             resolve('Hola mundo')
-        } else  reject('Hola mundo cruel y gris')
+        } else {
+            return reject('Hola mundo cruel y gris')
+        } 
     }, 2000)
     
 })
 
-async function espera() {
+async function espera2() {
     try {
         let resultat = await saludar3
         console.log(resultat)
@@ -52,7 +55,7 @@ async function espera() {
     }
     
 }
-espera()
+espera2()
 
 //3.6 promise.all
 
